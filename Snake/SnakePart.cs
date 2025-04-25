@@ -38,9 +38,9 @@ namespace Snake
         /// </summary>
         public void Draw()
         {
-            if (Position.X == -1 || Position.X == Console.WindowWidth + 1)
+            if (Position.X == -1 || Position.X == Console.BufferWidth + 1)
                 Environment.Exit(0);
-            if (Position.Y == -1 || Position.Y == Console.WindowHeight + 1)
+            if (Position.Y == -1 || Position.Y == Console.BufferHeight + 1)
                 Environment.Exit(0);
             Console.SetCursorPosition(Position.X, Position.Y);
             Console.Write(Symbol);
